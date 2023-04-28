@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Shooter</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      canvas {
+        display: block;
+      }
+      #info {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+      #sliderContainer {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+      }
+      #sliderLabel {
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="info">
+      <p id="health">Health: 100</p>
+      <p id="stoppedMissiles">Stopped Missiles: 0</p>
+    </div>
+    <div id="sliderContainer">
+      <label id="sliderLabel" for="missileSlider">Missiles: 5</label>
+      <input type="range" id="missileSlider" min="1" max="50" value="15" />
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="main2.js"></script>
+  </body>
+</html>
